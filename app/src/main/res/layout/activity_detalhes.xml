@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:background="@color/colorPrimary">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+    android:background="@color/colorPrimary">
+
+        <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="6dp"
+                android:elevation="8dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false"
+        android:background="@color/colorPrimary">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+                <TextView
+                        android:id="@+id/titulo_filme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:text="Titulo Filme"
+                        android:layout_weight="1"
+                        android:textSize="18sp"/>
+
+                <TextView
+                        android:id="@+id/rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:layout_weight="0"
+                        android:text="nota"
+                        android:textSize="12sp"/>
+                <ImageView
+                        android:id="@+id/rate_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_star_border_white_24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="32dp"
+            android:background="@color/colorPrimary">
+
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/background_filme"
+                />
+
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Assistir"
+                        android:backgroundTint="#3498db"
+                        android:padding="8dp"
+                        />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="12dp">
+                    <TextView
+                            android:id="@+id/descricao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:layout_weight="0"
+                            android:text=""
+                            android:textSize="12sp"/>
+
+                   <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_marginLeft="8dp"
+                           android:layout_marginTop="28dp">
+                       <TextView
+                               android:id="@+id/language"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="#fff"
+                               android:layout_marginTop="12dp"
+                               android:text=""
+                               android:textSize="12sp"/>
+
+                       <TextView
+                               android:id="@+id/release"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="#fff"
+                               android:layout_marginTop="12dp"
+                               android:layout_marginLeft="12dp"
+                               android:text=""
+                               android:layout_marginRight="6dp"
+                               android:textSize="12sp"/>
+                       <TextView
+                               android:id="@+id/genero1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="#fff"
+                               android:layout_weight="1"
+                               android:layout_marginTop="12dp"
+                               android:text=" "
+                               android:textSize="12sp"/>
+                       <TextView
+                               android:id="@+id/genero2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="#fff"
+                               android:layout_weight="1"
+                               android:layout_marginTop="12dp"
+                               android:text=" "
+                               android:textSize="12sp"/>
+                       <TextView
+                               android:id="@+id/genero3"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="#fff"
+                               android:layout_weight="1"
+                               android:layout_marginTop="12dp"
+                               android:text=" "
+                               android:textSize="12sp"/>
+
+                   </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="32dp">
+
+                        <ImageView
+                                android:id="@+id/trailer_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:layout_marginRight="25px"
+                                android:src="@drawable/ic_trailer_24dp"/>
+                        <TextView
+                                android:id="@+id/trailer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:layout_weight="2"
+                                android:padding="3dp"
+                                android:text="Trailer"
+                                android:textSize="12sp"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="32dp">
+
+                        <ImageView
+                                android:id="@+id/assistir_mais_tarde_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:layout_marginRight="25px"
+                                android:src="@drawable/ic_date_range_black_24dp"/>
+                        <TextView
+                                android:id="@+id/assistir_mais_tarde"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:layout_weight="2"
+                                android:padding="3dp"
+                                android:text="Assistir mais tarde"
+                                android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="32dp">
+
+                        <ImageView
+                                android:id="@+id/compartilhar_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:layout_marginRight="25px"
+                                android:src="@drawable/ic_share_black_24dp"/>
+                        <TextView
+                                android:id="@+id/compartilhar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:layout_weight="2"
+                                android:padding="3dp"
+                                android:text="Compartilhar"
+                                android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
