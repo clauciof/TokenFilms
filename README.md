@@ -2,7 +2,7 @@
 
 ## Descrição 
 Interface App de streaming similar a Netflix/Amazon Prime.
-O app consome os dados de uma api fornecida pela tokenlab
+O app consome os dados de uma api fornecida pela tokenlab. Desenvolvido sob Arquitetura MVP
 
 
 ## Tela Inicial
